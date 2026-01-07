@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Pour ma princesse ❤️</title>
+
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(#ffb6c1, #ffe6f0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+  }
+
+  .heart {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background: #ff3366;
+    transform: rotate(-45deg);
+    animation: beat 1s infinite;
+  }
+
+  .heart::before,
+  .heart::after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: #ff3366;
+    border-radius: 50%;
+  }
+
+  .heart::before {
+    top: -60px;
+    left: 0;
+  }
+
+  .heart::after {
+    left: 60px;
+    top: 0;
+  }
+
+  @keyframes beat {
+    0%, 100% {
+      transform: scale(1) rotate(-45deg);
+    }
+    50% {
+      transform: scale(1.2) rotate(-45deg);
+    }
+  }
+
+  h1 {
+    margin-top: 40px;
+    color: #b3003b;
+    text-align: center;
+  }
+
+  p {
+    color: #80002a;
+    font-size: 20px;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="heart"></div>
+
+<h1>Je t’aime ❤️</h1>
+<p>Maeva</p>
+
+</body>
+</html>
